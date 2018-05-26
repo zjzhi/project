@@ -1,0 +1,11 @@
+#test {
+  left: 200px;
+  top: 100px; }
+  #test .class {
+    width: 100px;
+    height: 100px;
+    background: #ccc;
+    font-size: 10px; }
+
+body {
+  background: #000; }
