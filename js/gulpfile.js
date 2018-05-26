@@ -9,7 +9,7 @@ var browserSync = require('browser-sync');
 //定义任务 sass任务
 gulp.task("sass", function() {
     //导入文件
-    gulp.src("../sass/test.scss")
+    gulp.src("../sass/*.scss")
         //转代码
         .pipe(sass().on('error', sass.logError))
         //导出文件
