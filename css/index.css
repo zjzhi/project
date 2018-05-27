@@ -90,6 +90,7 @@
       #nav .container .nav_list .li1:first-child {
         position: relative; }
       #nav .container .nav_list .li1 {
+        text-align: left;
         height: 45px;
         width: 190px;
         background: #fff;
@@ -98,6 +99,8 @@
           color: #CCCCCC;
           font-size: 12px; }
         #nav .container .nav_list .li1 a {
+          display: inline-block;
+          width: 150px;
           font-size: 12px;
           text-align: center; }
           #nav .container .nav_list .li1 a i {
@@ -106,34 +109,47 @@
             margin-left: 5px;
             color: #66667D;
             line-height: 45px; }
-        #nav .container .nav_list .li1 ul {
+        #nav .container .nav_list .li1 div {
           display: none;
+          background: #fff;
+          width: 770px;
+          height: 320px;
           position: absolute;
-          left: 190px;
-          top: 0; }
-          #nav .container .nav_list .li1 ul .li2 {
-            width: 90px;
+          left: 200px;
+          top: 0;
+          overflow: hidden;
+          border: 1px solid #90C31F; }
+          #nav .container .nav_list .li1 div ul .li2 {
+            width: 120px;
             height: 50px;
             padding: 10px 0;
-            padding-left: 45px;
+            padding-left: 15px;
             font-size: 12px;
             position: relative;
             font-weight: bold; }
-            #nav .container .nav_list .li1 ul .li2 ul {
-              display: block;
+            #nav .container .nav_list .li1 div ul .li2 ul {
+              background: #fff;
               font-weight: normal;
               padding: 10px 0;
               position: absolute;
-              left: 110px;
+              left: 80px;
               top: 0;
               width: 426px;
               border-bottom: 1px dashed #ccc; }
-              #nav .container .nav_list .li1 ul .li2 ul li {
+              #nav .container .nav_list .li1 div ul .li2 ul li {
                 margin: 5px;
                 padding-left: 5px;
                 float: left;
                 border-left: 1px solid #ccc;
                 color: #666666; }
+          #nav .container .nav_list .li1 div .nav_right {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 530px;
+            width: 228px;
+            height: 326px;
+            border: 0 none; }
       #nav .container .nav_list .li1:last-child {
         border: 0 none; }
     #nav .container .nav_top li {
@@ -147,3 +163,98 @@
         padding: 0 35px; }
     #nav .container .nav_top li:hover {
       background: #6D9D03; }
+
+#banner .container {
+  position: relative; }
+  #banner .container .ban_c {
+    width: 760px;
+    height: 320px;
+    position: absolute;
+    left: 210px;
+    top: 0;
+    overflow: hidden; }
+    #banner .container .ban_c .a-content {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+      -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+      position: relative; }
+    #banner .container .ban_c .a-content:before {
+      content: '';
+      width: 500px;
+      height: 300px;
+      left: 35px;
+      top: 19px;
+      z-index: -1;
+      position: absolute;
+      border-radius: 20px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      background: rgba(0, 0, 0, 0);
+      -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+      -webkit-transform: translate(-5%, -5%);
+      transform: translate(-5%, -5%);
+      -ms-transform: translate(-5%, -5%);
+      -moz-transform: translate(-5%, -5%);
+      -o-transform: translate(-5%, -5%); }
+    #banner .container .ban_c .a-content:after {
+      content: '';
+      position: absolute;
+      top: -25px;
+      left: 25%;
+      width: 270px;
+      height: 40px;
+      background: -webkit-gradient(linear, 555% 20%, 0% 92%, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0)), color-stop(0.1, rgba(0, 0, 0, 0.2)));
+      border-left: 1px dashed rgba(0, 0, 0, 0.1);
+      border-right: 1px dashed rgba(0, 0, 0, 0.1);
+      -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+      display: none; }
+    #banner .container .ban_c .carousel-content {
+      width: var(--mywidth);
+      height: var(--myheight);
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px; }
+    #banner .container .ban_c .carousel {
+      height: var(--myheight);
+      position: absolute; }
+      #banner .container .ban_c .carousel li {
+        float: left; }
+      #banner .container .ban_c .carousel li, #banner .container .ban_c .carousel li img {
+        width: var(--mywidth);
+        height: var(--myheight); }
+    #banner .container .ban_c .img-index {
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      display: flex;
+      justify-content: center; }
+      #banner .container .ban_c .img-index li {
+        float: left;
+        width: 18px;
+        height: 18px;
+        line-height: 18px;
+        text-align: center;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.2);
+        font-size: 12px;
+        cursor: pointer;
+        margin: 0 3px;
+        color: #fff; }
+      #banner .container .ban_c .img-index li.js_index, #banner .container .ban_c .img-index li:hover {
+        background-color: rgba(0, 0, 0, 0.7); }
+    #banner .container .ban_c .carousel-prev, #banner .container .ban_c .carousel-next {
+      position: absolute;
+      display: inline-block;
+      top: 45%;
+      cursor: pointer;
+      display: none; }
+    #banner .container .ban_c .carousel-prev {
+      left: 0; }
+    #banner .container .ban_c .carousel-next {
+      right: 0; }
+  #banner .container .ban_r {
+    width: 220px;
+    height: 320px;
+    background: url(../img/0f_right1.jpg) no-repeat; }
